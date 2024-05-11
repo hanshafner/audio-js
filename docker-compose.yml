@@ -3,6 +3,8 @@ services:
   app:
     build:
       context: .
+    container_name: audio-js
+    restart: unless-stopped
     ports:
       - "12222:3000"
     volumes:
